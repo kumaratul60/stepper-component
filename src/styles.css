@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.steps {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.steps-container {
+  position: relative;
+}
+.progress-line {
+  position: absolute;
+  background: powderblue;
+  width: 0;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.25s ease;
+}
+
+.steps-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steps.active {
+  background-color: chartreuse;
+}
